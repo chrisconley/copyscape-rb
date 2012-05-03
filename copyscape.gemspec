@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
   
-  s.add_dependency("nokogiri", "1.4.1")
-  s.add_dependency("httparty", "0.7.7")
+  s.add_dependency("nokogiri", "~>1.5.2")
+  s.add_dependency("httparty", "~>0.8.3")
   s.add_development_dependency("rake", "0.8.7")
   s.add_development_dependency("shoulda-context")
   s.add_development_dependency("mocha")
